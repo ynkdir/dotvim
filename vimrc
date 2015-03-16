@@ -12,7 +12,7 @@ set wildmenu
 set winminheight=0
 set noequalalways
 set backspace=indent,eol,start
-set formatoptions+=nmB
+set formatoptions+=nmB formatoptions-=t formatoptions-=c
 set autoindent
 set tags+=./tags;
 set mouse=nvi
