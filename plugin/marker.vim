@@ -1,4 +1,4 @@
-" Last Change: 2009-02-17
+" Last Change: 2015-04-17
 "
 " :nmap mm <Plug>MarkerToggle
 " :vmap m  <Plug>MarkerToggle
@@ -41,7 +41,7 @@ endfunction
 function! s:ToggleMarker(group, pat)
   let matches = getmatches()
   for m in matches
-    if m.pattern ==# a:pat
+    if m.group =~ '^Marker.*' && m.pattern ==# a:pat
       call matchdelete(m.id)
       return
     endif
