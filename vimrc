@@ -21,7 +21,7 @@ set wildignorecase
 set visualbell t_vb=          " turn off beep
 set cryptmethod=blowfish2     " keep safe method
 
-colorscheme delek
+"colorscheme default
 syntax on
 filetype plugin indent on
 
